@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available</title>
+</head>
+<body>
+{% for x in content %}
+    <img src={{x[1]}}></img>
+    <p>Name :{{x[2]}}</p>
+    <p> Price :{{x[3]}}</p>
+    <a href="{{x[0]}}">Go to Store</a>
+    <br>
+    <br>
+    <br>
+
+{% endfor %}
+
+
+</body>
+</html>
